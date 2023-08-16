@@ -1,0 +1,28 @@
+<%- include("header.ejs") %>
+
+<div class="box" id="date">
+<h1><%= dis %></h1>
+</div>
+
+
+<div class="itemsBox" >
+
+<ul>
+<% for( let i = 0; i < workItems.length; i++ ) { %>
+    <li style="list-style: none;">
+        <div class="item item<%= i %>" id="">
+            <input type="checkbox" name="todo" id="">
+            <div class="pdiv"><p><%= workItems[i]%></p></div>
+        </div>
+    </li>
+<% } %>
+</ul>
+
+<form class=" item" id = "" action="/" method="post">
+    <input type="text" class="" name="workItem" id="text" placeholder="Add Item" autocomplete="off" required>
+    <button type="submit" id="addItem"> + </button>
+</form>
+
+</div>
+
+<%- include("footer.ejs") %>

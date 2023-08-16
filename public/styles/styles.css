@@ -1,0 +1,275 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: #EDE4FF;
+    font-family: 'Raleway', sans-serif;
+}
+
+main{
+    display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: center;
+  min-height: 90vh;
+    text-align: center;
+    margin:auto;
+
+
+}
+
+.itemsBox
+{
+    box-shadow: 0 4px 5px grey;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+
+/*------------------------NAV BAR--------------------------------*/
+.navbar{
+    display: flex;
+
+    color: rgba(137, 43, 226, 0.747);
+    font-size: 1.1rem;
+    font-weight: 200;
+}
+
+nav > ul{
+    list-style: none;
+}
+.nav-item
+{
+    display: inline-block;
+    margin: 2rem;
+}
+ .nav-item a, .nav-item a:active, .nav-item a:focus
+{
+    text-decoration: none; 
+    color: rgba(137, 43, 226, 0.747);
+}
+
+
+
+/*---------------------------------BOX class for  DATE and ITEM---------------------------------*/
+.box
+{
+    
+    width: 30vw;
+
+    text-align: center;
+    box-shadow: 2px 4px 10px grey;
+}
+
+
+
+/*--------------------------------BOX #DATE---------------------------------------------------*/
+#date
+{
+    height: 4rem;
+    line-height: 4rem;
+    margin: 5rem auto 3rem;
+    border-radius: 20px;
+    color: white;
+    font-size: 1rem;
+    background-color: rgba(137, 43, 226, 0.747);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+  
+/*--------------------------------BOX #ITEM------------------------------------------*/
+.item
+{
+    display: flex;
+    align-items: center;
+    height: auto;
+    
+    width: 30vw;
+    line-height: auto;
+    border-bottom: 1px solid  #e4e9fd;
+    margin: 0 auto;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: black;
+    overflow: hidden;
+    background-color:#ffffff5e;
+}
+
+.pdiv
+{
+    text-align: justify;
+    width: 30vw;
+
+    padding: 0;
+    overflow-wrap: break-word;
+}
+
+.item0
+{
+    border-radius: 15px 15px 0 0;
+    -webkit-border-radius: 15px 15px 0 0;
+    -moz-border-radius: 15px 15px 0 0;
+    -ms-border-radius: 15px 15px 0 0;
+    -o-border-radius: 15px 15px 0 0;
+}
+
+/*.item:last-child
+{
+    border-bottom:0;
+}*/
+
+input:checked + .pdiv {
+    text-decoration: line-through;
+    text-decoration-color: blueviolet;
+
+}
+  
+input[type="checkbox"] {
+    margin: 1rem ;
+  }
+  
+p
+{
+    text-align: justify;
+    margin: 0.5rem;
+  
+    color: #00204a;
+}
+
+/*---------------------------FORM-----------------------*/
+form{
+ display: flex;
+ justify-content: space-between;
+ width: 30vw;
+ border: none !important;
+ border-radius:0 0 15px 15px;
+ text-align: center;
+ box-shadow: 0 4px 5px grey;
+
+}
+/*-----------------Text input------------------------------*/
+input[type="text"] {
+    text-align: center;
+    min-height: 3rem;
+    height: auto;
+    width: 22vw;
+    margin-left: 0.5rem;
+    font-family: 'Raleway', sans-serif;
+    top: 10px;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    background-color: #ffffffd3;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+  input[type="text"]:focus {
+    outline: none;
+    box-shadow: inset 0 -1px  0 #a683e3;
+  }
+  
+  ::placeholder
+  {
+    opacity: 0.5;
+  }
+ 
+/*----------------------AddItem button--------------------*/
+button {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    border: none;
+    background-color: #a683e3;
+    color: #fff;
+    font-size: 2rem;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+/*-----------------------------------FOOTER--------------------------------------------*/
+footer {
+
+    position: relative;
+    margin: 2rem auto;
+    color: rgba(0, 0, 0, 0.747);
+    text-align: center;
+  }
+  
+
+  @media(max-width : 400px)
+  {
+    main{
+        min-height: 85vh;
+    }
+    .navbar{
+        justify-content: center;
+    }
+    .nav-item{
+    display: inline-block;
+    margin: 1rem;
+    }
+    .box
+    {
+        width: 80vw;
+    }
+
+    #date
+    {
+        margin: 2rem auto 1rem;
+        font-size: 0.8rem;
+    }
+
+    .item
+    {
+        width: 80vw;
+        padding: 0.6rem;
+        font-size: 1.2rem;
+    }
+
+    .pdiv{
+       
+        width: 60vw;
+    }
+
+    p
+    {
+        margin: 0.3rem;
+    }
+
+    form {
+        width: 80vw;
+    }
+
+    input[type="text"]
+    {
+        min-height: 2.5rem;
+        width: 55vw;
+        font-size: 1.3rem;
+    }
+
+    footer {
+        margin: 1rem auto;
+    }
+    }
+
+  
